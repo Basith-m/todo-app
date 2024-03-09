@@ -1,0 +1,1 @@
+export const SERVER_URL = "https://todo-server-0krv.onrender.com"

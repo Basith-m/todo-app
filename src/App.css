@@ -1,0 +1,47 @@
+:root {
+    --box-border: 1px solid rgba(0, 0, 0, 0.1);
+    --title-color: rgba(0, 0, 0, 0.7);
+    --title-color-dark: rgba(0, 0, 0, 1);
+    --body-color: #fbfbfb;
+    --body-color-dark: #f1f1f1;
+    --container-color: #ffff;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+.section {
+    margin: 4rem 0 2rem;
+}
+
+.container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* breakpoints */
+@media only screen and (max-width: 1200px) {
+    .section {
+        margin: 4rem 0 1rem;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}

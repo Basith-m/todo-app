@@ -1,0 +1,98 @@
+.todo_input-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.todo_input-content {
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--container-color);
+  border-radius: 1.5rem;
+  border: var(--box-border);
+  transition: 0.3s;
+  position: relative;
+}
+
+.todo_input-content form {
+  width: 300px;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+
+.todo_input-area {
+  background-color: var(--body-color);
+  margin-bottom: 1rem;
+}
+
+.todo_input-area:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+
+.todo_input-area::placeholder {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.save_btn {
+  float: right;
+  font-size: 1rem;
+}
+
+.cross_icon{
+    position: absolute;
+    color: var(--title-color);
+    font-size: 1.5rem;
+    top: 10px;
+    right: 15px;
+}
+
+.cross_icon:hover {
+    color: var(--title-color-dark);
+}
+
+/* breakpoints */
+@media only screen and (max-width: 768px) {
+  .todo_input-content {
+    min-width: 360px;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .todo_input-content {
+    min-width: 300px;
+    padding: 1.25rem;
+  }
+
+  .todo_input-content form {
+    width: 100%;
+  }
+
+  .save_btn {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+    .todo_input-content {
+      min-width: 200px;
+      padding: 1rem;
+    }
+  }
